@@ -1,0 +1,27 @@
+[project]
+name = "Open_Duck_Playground"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "brax>=0.12.4",
+    "framesviewer>=1.0.2",
+    "jax[cuda12]==0.5.3",
+    "jaxtyping>=0.2.38",
+    "matplotlib>=3.10.0",
+    "mediapy>=1.2.2",
+    "onnxruntime>=1.20.1",
+    "playground",
+    "pygame>=2.6.1",
+    "tensorboard>=2.21.0",
+    "tensorflow>=2.18.0",
+    "tf2onnx>=1.16.1",
+]
+[build-system]
+requires = ["setuptools"]
+[tool.setuptools]
+packages = ["playground"]
+
+[tool.uv.sources]
+playground = { path = "/home/tim/dm_mjp", editable = true }
